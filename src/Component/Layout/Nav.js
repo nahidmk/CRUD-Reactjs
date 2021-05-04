@@ -7,8 +7,7 @@ const Nav = () => {
     let history = useHistory()
 
     const onClickEvent=()=>{
-        localStorage.setItem('check',JSON.stringify(false));
-        console.log(localStorage.getItem('check'))
+        localStorage.clear()
         history.push("/login")
     }
 
